@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-10T20:45:57.901Z",
+        "line": 4,
+        "name": "Verify Search",
+        "description": "",
+        "id": "google-search;verify-search",
+        "after": [
+          {
+            "result": {
+              "duration": 98000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BDD_Step.Hooks.Aftervaldiation()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11903000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is navigated to Google.com Page",
+            "match": {
+              "location": "BDD_Step.TC002Google2.user_is_navigated_to_googlecom_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13165000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Enters \"IPL 2020\" and click Search Button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "IPL 2020",
+                  "offset": 13
+                }
+              ],
+              "location": "BDD_Step.TC002Google2.user_enters_something_and_click_search_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"IPL 2020\" Search page is Displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "IPL 2020",
+                  "offset": 1
+                }
+              ],
+              "location": "BDD_Step.TC002Google2.something_search_page_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeleniumTest"
+          }
+        ]
+      }
+    ],
+    "name": "Google Search",
+    "description": "",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/BDD_Feature/TS004Google2.feature",
+    "tags": []
+  }
+]
