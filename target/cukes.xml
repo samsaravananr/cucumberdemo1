@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.537">
-<testcase classname="Google Search" name="Verify Search" time="25.274">
-<system-out><![CDATA[Given User is navigated to Google.com Page..................................passed
-When User Enters "IPL 2020" and click Search Button.........................passed
-Then "IPL 2020" Search page is Displayed....................................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.554">
+<testcase classname="Google Search" name="Verify Search" time="4.248">
+<failure message="session not created: This version of ChromeDriver only supports Chrome version 86&#10;Current browser version is 93.0.4577.63 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SARAVANANR', ip: '192.168.29.54', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x00CAC013+3194899]&#10;&#9;Ordinal0 [0x00B96021+2056225]&#10;&#9;Ordinal0 [0x00A2F608+587272]&#10;&#9;Ordinal0 [0x009B1BF3+72691]&#10;&#9;Ordinal0 [0x009AE229+57897]&#10;&#9;Ordinal0 [0x009AC64A+50762]&#10;&#9;Ordinal0 [0x009D1EE9+204521]&#10;&#9;Ordinal0 [0x009D1D0D+204045]&#10;&#9;Ordinal0 [0x009CFC1B+195611]&#10;&#9;Ordinal0 [0x009B3B7F+80767]&#10;&#9;Ordinal0 [0x009B4B4E+84814]&#10;&#9;Ordinal0 [0x009B4AD9+84697]&#10;&#9;Ordinal0 [0x00BACE64+2149988]&#10;&#9;GetHandleVerifier [0x00E1BE95+1400773]&#10;&#9;GetHandleVerifier [0x00E1BB61+1399953]&#10;&#9;GetHandleVerifier [0x00E231FA+1430314]&#10;&#9;GetHandleVerifier [0x00E1C69F+1402831]&#10;&#9;Ordinal0 [0x00BA3D61+2112865]&#10;&#9;Ordinal0 [0x00BAE5CB+2155979]&#10;&#9;Ordinal0 [0x00BAE6F5+2156277]&#10;&#9;Ordinal0 [0x00BBF26E+2224750]&#10;&#9;BaseThreadInitThunk [0x7652FA29+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77607A7E+286]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77607A4E+238]&#10;" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User is navigated to Google.com Page..................................failed
+When User Enters "IPL 2020" and click Search Button.........................skipped
+Then "IPL 2020" Search page is Displayed....................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 86
+Current browser version is 93.0.4577.63 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SARAVANANR', ip: '192.168.29.54', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00CAC013+3194899]
+	Ordinal0 [0x00B96021+2056225]
+	Ordinal0 [0x00A2F608+587272]
+	Ordinal0 [0x009B1BF3+72691]
+	Ordinal0 [0x009AE229+57897]
+	Ordinal0 [0x009AC64A+50762]
+	Ordinal0 [0x009D1EE9+204521]
+	Ordinal0 [0x009D1D0D+204045]
+	Ordinal0 [0x009CFC1B+195611]
+	Ordinal0 [0x009B3B7F+80767]
+	Ordinal0 [0x009B4B4E+84814]
+	Ordinal0 [0x009B4AD9+84697]
+	Ordinal0 [0x00BACE64+2149988]
+	GetHandleVerifier [0x00E1BE95+1400773]
+	GetHandleVerifier [0x00E1BB61+1399953]
+	GetHandleVerifier [0x00E231FA+1430314]
+	GetHandleVerifier [0x00E1C69F+1402831]
+	Ordinal0 [0x00BA3D61+2112865]
+	Ordinal0 [0x00BAE5CB+2155979]
+	Ordinal0 [0x00BAE6F5+2156277]
+	Ordinal0 [0x00BBF26E+2224750]
+	BaseThreadInitThunk [0x7652FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77607A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77607A4E+238]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at BDD_Step.Base.getDriver(Base.java:22)
+	at BDD_Step.TC002Google2.user_is_navigated_to_googlecom_page(TC002Google2.java:21)
+	at ✽.User is navigated to Google.com Page(file:///C:/Users/SARAVANAN%20R/git/cucumberdemo11/src/test/java/BDD_Feature/TS004Google2.feature:5)
+]]></failure>
 </testcase>
 </testsuite>
